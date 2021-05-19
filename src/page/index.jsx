@@ -12,6 +12,7 @@ import Contact from "../components/contact.jsx"
 import About from "../components/about.jsx"
 import Blogs from "../components/blogs.jsx"
 import Stack from "../sdk/entry"
+import Quote from "../components/quote.jsx"
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -91,6 +92,7 @@ export default class Home extends React.Component {
         ) : (
           ""
         )}
+        {this.state.entry.quote ? <Quote quote={this.state.entry.quote} /> : ""}
         {/* <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) --> */}
         <div className="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
           <a className="btn btn-primary" href="#page-top">

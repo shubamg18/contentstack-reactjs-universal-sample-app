@@ -205,6 +205,10 @@ a.button1:hover {
     background-color: #FFFFFF;
 }
 
+.quote {
+    background-color: rgba(24,188,156,.9);
+}
+
 @media all and (max-width:30em) {
     a.button1 {
         display: block;
